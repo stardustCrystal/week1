@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Grocery Shopper Survey</h3>
+<p id="demo"></p>
+
+<script>
+
+var shopper = {
+    firstName  : "Crystal",
+    age        : 38,
+    isfemale   : true,
+    groceryCart: "Avacados, nuts, fruit",
+    
+    get lang() {
+        return this.firstName + " " + this.age + " " + this.isfemale + " " + this.groceryCart;
+    }  
+};
+
+document.getElementById("demo").
+innerHTML = shopper.lang;
+</script>
+
+</body>
+</html>
